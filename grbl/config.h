@@ -34,12 +34,13 @@
 // NOTE: OEMs can avoid the need to maintain/update the defaults.h and cpu_map.h files and use only
 // one configuration file by placing their specific defaults and pin map at the bottom of this file.
 // If doing so, simply comment out these two defines and see instructions below.
-#define DEFAULTS_GENERIC
+//#define DEFAULTS_GENERIC
+#define DEFAULTS_LASER_ENGRAVING_MACHINE
 #define CPU_MAP_ATMEGA328P // Arduino Uno CPU
 
 // Serial baud rate
 // #define BAUD_RATE 230400
-#define BAUD_RATE 115200
+#define BAUD_RATE 57600// Uno 115200 // Nano 57600
 
 // Define realtime command special characters. These characters are 'picked-off' directly from the
 // serial read data stream and are not passed to the grbl line execution parser. Select characters
